@@ -13,12 +13,36 @@ function estrella(){
 }
 
 function gif(){
-    figure.style.background = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2U5OXd1bmY5cHppYmc0eHA4MTk4czMxNXlzN2ZhY3k4cHNyNjM1ciZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/qiMbLh4WHEZyw/giphy.gif";
+    figure.style.backgroundImage = "url('img/sea-16233_128.gif')";
+    figure.style.backgroundSize = 'cover';
+ 
    }
+
+function animacion(){
+    figure.classList.add('animado');
+
+}
+
+function arriba (){
+    figure.classList.toggle("top");
+    figure.style.background = "#18848bff";
+}
+
+
+
 
 
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnCircle').addEventListener('click', circulo);
-    document.getElementById('btnStar').addEventListener('click', estrella )
+    document.getElementById('btnStar').addEventListener('click', estrella );
+    document.getElementById('btnGif').addEventListener('click', gif );
+    document.getElementById('btnAnim').addEventListener('click', animacion );
+    document.getElementById('btnMoveUp').addEventListener('click', arriba );
+
+  
+    
+
+
+
 
 })

@@ -100,3 +100,21 @@ img{
     margin-top: 20px;
     display: block;
 }
+
+#figure.animado{
+  animation: rotacion 2s infinite;
+}
+@keyframes rotacion{
+  from{
+    transform: rotate(0deg);
+    background: rgb(119, 14, 14);
+  }
+  to{
+    transform: rotate(360deg);
+    background: #160616;
+  }
+}
+
+#figure.top{
+  transform: translateY(-150px);
+}
