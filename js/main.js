@@ -141,6 +141,19 @@ function imagenAnt() {
   imagen.src = arregloImagenes[index];
 }
 
+function toggleImage() {
+    if (imagen.style.display === "none") {
+        imagen.style.display = "block";
+    } else {
+        imagen.style.display = "none";
+    }
+}
+
+function cambiarAlt(){
+    const text = prompt('Ingresa un texto: ')
+    imagen.setAttribute('alt', text)
+}
+
 
 
 
@@ -177,6 +190,8 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnChooseFigure').addEventListener('click', elegirFigura );
     document.getElementById('btnChangeImageNext').addEventListener('click', imageNext );
     document.getElementById('btnChangeImagePrev').addEventListener('click', imagenAnt );
+    document.getElementById('btnToggleImage').addEventListener('click', toggleImage );
+    document.getElementById('btnChangeAlt').addEventListener('click', cambiarAlt );
 
   
     
