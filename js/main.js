@@ -136,6 +136,15 @@ function imageNext(){
     imagen.setAttribute('src', arregloImagenes[index])
 }
 
+function imagenAnt() {
+  index = (index - 1 + arregloImagenes.length) % arregloImagenes.length;
+  imagen.src = arregloImagenes[index];
+}
+
+
+
+
+
 
 
 
@@ -167,6 +176,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnHexColor').addEventListener('click', color );
     document.getElementById('btnChooseFigure').addEventListener('click', elegirFigura );
     document.getElementById('btnChangeImageNext').addEventListener('click', imageNext );
+    document.getElementById('btnChangeImagePrev').addEventListener('click', imagenAnt );
 
   
     
