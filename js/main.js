@@ -27,6 +27,7 @@ function arriba (){
     figure.classList.toggle("top");
     figure.style.background = "#18848bff";
 }
+function
 
 
 
