@@ -118,3 +118,6 @@ img{
 #figure.top{
   transform: translateY(-150px);
 }
+#figure.down{
+  transform: translateY(150px);
+}
