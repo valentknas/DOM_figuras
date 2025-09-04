@@ -127,6 +127,14 @@ function elegirFigura(){
     }
 
 }
+function imageNext(){
+    index++
+    if (index >= arregloImagenes.length) {
+        index = 0
+    }
+
+    imagen.setAttribute('src', arregloImagenes[index])
+}
 
 
 
@@ -158,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnRemoveParagraph').addEventListener('click', eliminar );
     document.getElementById('btnHexColor').addEventListener('click', color );
     document.getElementById('btnChooseFigure').addEventListener('click', elegirFigura );
-    document.getElementById('btnChangeImageNext').addEventListener('click', imagen );
+    document.getElementById('btnChangeImageNext').addEventListener('click', imageNext );
 
   
     
