@@ -121,3 +121,7 @@ img{
 #figure.down{
   transform: translateY(150px);
 }
+
+#figure.left{
+  transform: translateX(-150px);
+}

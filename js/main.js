@@ -31,6 +31,10 @@ function abajo(){
     figure.classList.toggle("down");
     figure.style.background = "#18848bff";
 }
+function izquierda(){
+     figure.classList.toggle("left");
+     figure.style.background = "#18848bff";
+}
 
 
 
@@ -43,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnAnim').addEventListener('click', animacion );
     document.getElementById('btnMoveUp').addEventListener('click', arriba );
     document.getElementById('btnMoveDown').addEventListener('click', abajo );
+    document.getElementById('btnMoveLeft').addEventListener('click', izquierda );
 
   
     
