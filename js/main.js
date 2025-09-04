@@ -80,6 +80,21 @@ function eliminar(){
   }
 }
 
+// atributos
+function color(){
+    const colore = document.getElementById("figure");
+    const color = prompt("Agrega el nuevo Color:");
+
+  if (color) { 
+    colore.textContent = color; 
+    colore.style.backgroundColor= color;
+  }
+}
+
+
+
+
+
 
 
 
@@ -101,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnChangeParagraph').addEventListener('click', parrafo );
     document.getElementById('btnAddParagraph').addEventListener('click', parrafo2 );
     document.getElementById('btnRemoveParagraph').addEventListener('click', eliminar );
+    document.getElementById('btnHexColor').addEventListener('click', color );
 
   
     
