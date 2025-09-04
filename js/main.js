@@ -153,12 +153,21 @@ function cambiarAlt(){
     const text = prompt('Ingresa un texto: ')
     imagen.setAttribute('alt', text)
 }
+function cambiarHref(){
+    const newHref = prompt('Ingresa una nueva URL: ')
+    const link = document.getElementById('mainLink')
+    link.setAttribute('href', newHref)
+}
 
-
-
-
-
-
+function abrirPestaña() {
+    link.setAttribute("target", "_blank");
+    link.setAttribute("href", "https://github.com/valentknas"); 
+    const link = document.getElementById('mainLink')
+}
+function desLink() {
+    link.removeAttribute("href"); 
+    
+}
 
 
 
@@ -192,6 +201,9 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnChangeImagePrev').addEventListener('click', imagenAnt );
     document.getElementById('btnToggleImage').addEventListener('click', toggleImage );
     document.getElementById('btnChangeAlt').addEventListener('click', cambiarAlt );
+    document.getElementById('btnChangeLink').addEventListener('click', cambiarHref );
+    document.getElementById('btnOpenLink').addEventListener('click', abrirPestaña );
+    document.getElementById('btnDisableLink').addEventListener('click', desLink );
 
   
     
