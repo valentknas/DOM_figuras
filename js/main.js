@@ -36,6 +36,11 @@ function izquierda(){
      figure.style.background = "#18848bff";
 }
 
+function derecha(){
+    figure.classList.toggle("right");
+    figure.style.background = "#18848bff";
+}
+
 
 
 
@@ -48,11 +53,9 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnMoveUp').addEventListener('click', arriba );
     document.getElementById('btnMoveDown').addEventListener('click', abajo );
     document.getElementById('btnMoveLeft').addEventListener('click', izquierda );
+    document.getElementById('btnMoveRight').addEventListener('click', derecha );
 
   
     
-
-
-
 
 })
