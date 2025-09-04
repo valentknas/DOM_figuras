@@ -52,6 +52,7 @@ function titulo(){
     }
 }
 
+
 function parrafo(){
     const parafo = document.getElementById("mainParagraph");
     const nuevoParafo = prompt("Escribe el nuevo párrafo:");
@@ -60,6 +61,8 @@ function parrafo(){
         parafo.textContent = nuevoParafo;
     }
 }
+
+
 
 
 
