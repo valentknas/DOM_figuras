@@ -62,6 +62,24 @@ function parrafo(){
     }
 }
 
+function parrafo2(){
+    const adicionar = document.getElementById('extraParagraphs')
+    const agregar= prompt("Escribe el texto para el nuevo párrafo")
+
+    if (agregar) {
+        adicionar.textContent = agregar;
+    }
+}
+
+function eliminar(){
+  const elimina = document.getElementById("extraParagraphs");
+    if (elimina.lastChild) {
+    elimina.removeChild(elimina.lastChild);
+  } else {
+    alert("No hay párrafos para eliminar.");
+  }
+}
+
 
 
 
@@ -81,6 +99,8 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnMoveRight').addEventListener('click', derecha );
     document.getElementById('btnChangeTitle').addEventListener('click', titulo );
     document.getElementById('btnChangeParagraph').addEventListener('click', parrafo );
+    document.getElementById('btnAddParagraph').addEventListener('click', parrafo2 );
+    document.getElementById('btnRemoveParagraph').addEventListener('click', eliminar );
 
   
     
