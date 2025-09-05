@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #000000;
+  background-color: #000814; /* azul muy oscuro casi negro */
   padding: 20px;
 }
 
@@ -21,17 +21,17 @@ body {
 /* Columna izquierda */
 .left {
   flex: 1;
-  background: #fff;
+  background: #001d3d; /* azul profundo */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0, 102, 204, 0.4); /* brillo azul */
   text-align: center;
 }
 
 .left h2,
 .right h2 {
   padding: 20px;
-  color: #050b13;
+  color: #00b4d8; /* azul brillante */
   font-size: 30px;
 }
 
@@ -44,21 +44,20 @@ body {
 button {
   padding: 14px 20px;
   border: none;
-  background: #b80606;
+  background: #0077b6; /* azul medio */
   color: #fff;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
   min-width: 160px;
   margin: 16px;
-  border: 2px solid #940404;
-
+  border: 2px solid #005f8a; /* azul oscuro */
 }
 
 button:hover {
-  background: #fff;
-  color: #013889;
-  border: 2px solid #013889;
+  background: #000814; /* azul casi negro */
+  color: #00b4d8; /* azul brillante */
+  border: 2px solid #00b4d8;
   border-radius: 0;
   transform: scale(1.1);
 }
@@ -66,10 +65,10 @@ button:hover {
 /* Columna derecha */
 .right {
   flex: 1;
-  background: #fff;
+  background: #001d3d; /* azul profundo */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0, 102, 204, 0.4);
   text-align: center;
 }
 
@@ -81,51 +80,52 @@ button:hover {
 .box {
   width: 200px;
   height: 200px;
-  background-color: #013889;
+  background-color: #0096c7; /* azul intermedio */
   margin: 0 auto;
   border-radius: 0;
   transition: all 0.5s ease;
   margin-top: 20px;
 }
 
-hr{
-    margin: 40px 0;
+hr {
+  margin: 40px 0;
 }
 
-img{
-    margin-top: 30px;
+img {
+  margin-top: 30px;
 }
 
-#mainLink{
-    margin-top: 20px;
-    display: block;
+#mainLink {
+  margin-top: 20px;
+  display: block;
 }
 
-#figure.animado{
+/* Animaciones */
+#figure.animado {
   animation: rotacion 2s infinite;
 }
-@keyframes rotacion{
-  from{
+@keyframes rotacion {
+  from {
     transform: rotate(0deg);
-    background: rgb(119, 14, 14);
+    background: #0077b6; /* azul medio */
   }
-  to{
+  to {
     transform: rotate(360deg);
-    background: #160616;
+    background: #001d3d; /* azul profundo */
   }
 }
 
-#figure.top{
+#figure.top {
   transform: translateY(-150px);
 }
-#figure.down{
+#figure.down {
   transform: translateY(150px);
 }
 
-#figure.left{
+#figure.left {
   transform: translateX(-150px);
 }
 
-#figure.right{
+#figure.right {
   transform: translateX(150px);
 }

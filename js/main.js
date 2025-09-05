@@ -1,5 +1,6 @@
 const figure = document.getElementById('figure');
 const imagen = document.getElementById('mainImage');
+const link = document.getElementById('mainLink');
 let arregloImagenes = [
     'img/imagen.jpg',
     'img/imagen2.jpg',
@@ -165,8 +166,9 @@ function abrirPestaña() {
     const link = document.getElementById('mainLink')
 }
 function desLink() {
-    link.removeAttribute("href"); 
-    
+
+    const url = document.getElementById('mainLink')
+    url.removeAttribute("href")
 }
 
 
